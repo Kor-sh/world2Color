@@ -1,6 +1,3 @@
-# 🌍 world2Color — Decode: 색상(hex) → 좌표
-# by 권승현 & ChatGPT
-
 def hex_to_rgb(hexcode):
     """#RRGGBB → (R,G,B)"""
     hexcode = hexcode.lstrip("#")
@@ -44,4 +41,5 @@ if __name__ == "__main__":
     hex2 = input("Color 2 (#RRGGBB): ").strip()
 
     lat, lon = decode_color(hex1, hex2)
+
     print(f"\n🧭 복원된 좌표: 위도 {lat}°, 경도 {lon}°")
